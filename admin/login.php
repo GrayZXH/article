@@ -1,4 +1,8 @@
-
+<?php 
+      session_start();
+      if (!empty($_SESSION['isLogin'])||$_SESSION['isLogin']=1){
+      header('Location:article.manage.php');}
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
